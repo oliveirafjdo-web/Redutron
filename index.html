@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redutron • Importadora de Eletrônicos</title>
+  <meta name="description" content="Redutron é importadora e marca registrada no INPI. Adaptadores Wi‑Fi e acessórios com qualidade e suporte no Brasil.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/favicon.png">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">
+        <div class="logo">R</div>
+        <span class="brand-name">REDUTRON</span>
+      </div>
+      <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="burger" aria-label="Menu" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container grid-2">
+      <div>
+        <h1>Tecnologia que conecta</h1>
+        <p class="lead">Somos <strong>importadores oficiais de eletrônicos</strong> e detentores da <strong>marca Redutron registrada no INPI</strong>. Qualidade, design e suporte no Brasil.</p>
+        <div class="pill-group">
+          <span class="pill">Importadora oficial</span>
+          <span class="pill">Marca registrada INPI</span>
+          <span class="pill">Garantia e suporte</span>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="assets/embalagem.png" alt="Embalagem Redutron">
+      </div>
+    </div>
+    <div class="gradient-wave" aria-hidden="true"></div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <div class="container grid-2">
+      <div>
+        <h2>Sobre a Redutron</h2>
+        <p>A Redutron atua na importação e distribuição de acessórios de tecnologia, com foco em adaptadores Wi‑Fi, conectividade e periféricos. Operamos com parceiros globais, controle de qualidade e documentação fiscal.</p>
+        <ul class="checks">
+          <li>Procedência garantida e nota fiscal</li>
+          <li>Homologações e conformidade aplicáveis</li>
+          <li>Suporte técnico e pós‑venda</li>
+        </ul>
+      </div>
+      <div class="card inpi">
+        <h3>Marca registrada no INPI</h3>
+        <p>Redutron é marca devidamente registrada no INPI.</p>
+        <p class="muted">Número do registro: <strong>preencher</strong></p>
+        <a class="btn btn-secondary" href="#" onclick="alert('Envie o número do registro para exibirmos aqui.');return false;">Anexar registro</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="produtos" class="produtos">
+    <div class="container">
+      <h2>Nossos produtos</h2>
+      <p class="muted center">Linha de conectividade e acessórios importados pela Redutron.</p>
+      <div class="gallery">
+        <img src="assets/produto-1.png" alt="Produto 1">
+        <img src="assets/produto-2.png" alt="Produto 2">
+        <img src="assets/produto-3.png" alt="Produto 3">
+        <img src="assets/produto-4.png" alt="Produto 4">
+        <img src="assets/produto-5.png" alt="Produto 5">
+      </div>
+    </div>
+  </section>
+
+  <section id="diferenciais" class="features">
+    <div class="container">
+      <h2>Por que escolher a Redutron</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <div class="icon">🛬</div>
+          <h3>Importação direta</h3>
+          <p>Parcerias com fabricantes e controle de qualidade de ponta a ponta.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">📦</div>
+          <h3>Estoque no Brasil</h3>
+          <p>Distribuição ágil e pronta‑entrega.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🛡️</div>
+          <h3>Marca registrada</h3>
+          <p>Identidade protegida no INPI e compromisso com conformidade.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🤝</div>
+          <h3>Suporte próximo</h3>
+          <p>Atendimento técnico e comercial para seu negócio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="operacao" class="operacao">
+    <div class="container">
+      <h2>Operação de importação</h2>
+      <p class="muted center">Importamos diretamente — logística internacional com parceiros certificados.</p>
+      <div class="container-hero card glass">
+        <img src="assets/container-1.jpg" alt="Container marítimo Redutron">
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <div class="container grid-2">
+      <div>
+        <h2>Fale com a Redutron</h2>
+        <p>Quer distribuir nossos produtos ou tirar dúvidas técnicas? Fale com a gente.</p>
+        <ul class="contact-list">
+          <li>📧 contato@redutron.com</li>
+          <li>📱 WhatsApp comercial: <a href="https://wa.me/5511915592556" target="_blank" rel="noopener">+55 (00) 00000‑0000</a></li>
+          <li>📍 Brasil</li>
+        </ul>
+      </div>
+      <form class="card form" onsubmit="event.preventDefault(); alert('Mensagem enviada! (Simulação)');">
+        <label>Seu nome
+          <input type="text" required>
+        </label>
+        <label>E‑mail
+          <input type="email" required>
+        </label>
+        <label>Mensagem
+          <textarea rows="4" required></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="brand">
+        <div class="logo small">R</div>
+        <span class="brand-name">REDUTRON</span>
+      </div>
+      <p class="copyright">© 2025 Redutron — Importadora de Eletrônicos.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
